@@ -16,7 +16,7 @@ The commands to run the image is this:
 
 ```
 
-#The database
+# The database
 
 As database i made use of h2 in memory database.
 
@@ -39,7 +39,7 @@ Passwors: no password
 
 ```
 
-#What has been implemented:
+# What has been implemented:
 
 I have created a bookstore app.
 
@@ -50,6 +50,7 @@ I have made a ManyToMany relationship between them. A book could have many Autho
 You must at first instert some authors in the system. This can be happen through postman from this RestApi and this json Body:
 
 > **Attension:** name & email must be unique for every Author
+
 ```
 POST  http://localhost:8080/authors/insert
 
@@ -75,7 +76,7 @@ POST  http://localhost:8080/authors/insert
 
 ```
 
-#Insert Books:
+# Insert Books:
 
 > **Attension:**  
 >
@@ -188,7 +189,7 @@ POST  http://localhost:8080/books/insert
 
 ```
 
-#Book Update:
+# Book Update:
 
 > **Attension:**
 >
@@ -233,7 +234,7 @@ Json Body:
 
 ```
 
-#Book Delete:
+# Book Delete:
 
 ```
 DELETE http://localhost:8080/books/{id}
@@ -242,7 +243,7 @@ example: http://localhost:8080/books/1, delete the book with id 1.
 
 ```
 
-#Filter Books
+# Filter Books
 
 We can filter the books we have in our database with the following Rest API:
 
