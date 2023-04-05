@@ -2,7 +2,7 @@
 
 This app, is based on java 17.
 
-I have created a docker file, and an imagefile.
+I have created a docker file, and an image file.
 
 You can pull the docker image from this:
 ```
@@ -18,7 +18,7 @@ The commands to run the image is this:
 
 # The database
 
-As database i made use of h2 in memory database.
+As database I made use of h2 in memory database.
 
 It starts when the application starts. 
 
@@ -193,7 +193,7 @@ POST  http://localhost:8080/books/insert
 
 > **Attension:**
 >
->Because I gave at the ManyToMany at the book side the     @ManyToMany(cascade = {CascadeType.MERGE})
+>Because I gave at the ManyToMany at the book side the @ManyToMany(cascade = {CascadeType.MERGE})
 >and the Authors name and email are unique it needs attention not to give at an authors name & email something that is already persistent in another authors in the database.
 >
 > the Author details will be updated here too.
