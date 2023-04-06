@@ -4,14 +4,18 @@ This app, is based on java 17.
 
 I have created a docker file, and an image file.
 
-You can pull the docker image from this:
+You can pull the docker image with this command:
 ```
-
+docker pull geolits/bookstore_rest_api
 
 ```
 
 The commands to run the image is this:
 ```
+docker run -it -p 8080:8080 geolits/bookstore_rest_api  (with this commnad we can see the terminal of the application)
+
+or
+
 
 
 ```
