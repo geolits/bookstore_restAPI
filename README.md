@@ -2,7 +2,7 @@
 
 This app, is based on java 17.
 
-I have created a docker file, and an imagefile.
+I have created a docker file, and an image file.
 
 You can pull the docker image from this:
 ```
@@ -16,9 +16,9 @@ The commands to run the image is this:
 
 ```
 
-#The database
+# The database
 
-As database i made use of h2 in memory database.
+As database I made use of h2 in memory database.
 
 It starts when the application starts. 
 
@@ -39,7 +39,7 @@ Passwors: no password
 
 ```
 
-#What has been implemented:
+# What has been implemented:
 
 I have created a bookstore app.
 
@@ -50,6 +50,7 @@ I have made a ManyToMany relationship between them. A book could have many Autho
 You must at first instert some authors in the system. This can be happen through postman from this RestApi and this json Body:
 
 > **Attension:** name & email must be unique for every Author
+
 ```
 POST  http://localhost:8080/authors/insert
 
@@ -75,7 +76,7 @@ POST  http://localhost:8080/authors/insert
 
 ```
 
-#Insert Books:
+# Insert Books:
 
 > **Attension:**  
 >
@@ -188,11 +189,11 @@ POST  http://localhost:8080/books/insert
 
 ```
 
-#Book Update:
+# Book Update:
 
 > **Attension:**
 >
->Because I gave at the ManyToMany at the book side the     @ManyToMany(cascade = {CascadeType.MERGE})
+>Because I gave at the ManyToMany at the book side the @ManyToMany(cascade = {CascadeType.MERGE})
 >and the Authors name and email are unique it needs attention not to give at an authors name & email something that is already persistent in another authors in the database.
 >
 > the Author details will be updated here too.
@@ -233,7 +234,7 @@ Json Body:
 
 ```
 
-#Book Delete:
+# Book Delete:
 
 ```
 DELETE http://localhost:8080/books/{id}
@@ -242,7 +243,7 @@ example: http://localhost:8080/books/1, delete the book with id 1.
 
 ```
 
-#Filter Books
+# Filter Books
 
 We can filter the books we have in our database with the following Rest API:
 
