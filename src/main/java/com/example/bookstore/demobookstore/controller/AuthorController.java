@@ -29,7 +29,7 @@ public class AuthorController {
             return ResponseEntity.ok(newAuthor);
         }
         catch(DataIntegrityViolationException e){
-            throw new MyConstraintViolationException("Constraint vailotation: email exists");
+            throw new MyConstraintViolationException("Constraint violation: Author's name or email already exists in db");
         }
     }
 

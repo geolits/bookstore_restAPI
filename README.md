@@ -12,11 +12,11 @@ docker pull geolits/bookstore_rest_api
 
 The commands to run the image is this:
 ```
-docker run -it -p 8080:8080 geolits/bookstore_rest_api  (with this commnad we can see the terminal of the application)
+docker run -it -p 8080:8080 --name bookstore_rest_api  geolits/bookstore_rest_api  (with this commnad we can see the terminal of the application)
 
 or
 
-
+docker run -d -p 8080:8080 --name bookstore_rest_api  geolits/bookstore_rest_api (contianer in detach mode, we will not see the command line in our cmd)
 
 ```
 
